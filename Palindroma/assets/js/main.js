@@ -9,8 +9,15 @@
 //paragonare la nuova costante con la parola immessa dall'utente
 //inserire if/else in una funzione
 
-
+//chiedo la parola all'utente
 let userWord = prompt('inserisci una parola');
 
+
+//separo le parole con .plit()
+//con gli apici vuoti la parola verrà scomposta in lettere formando un array
 splittedWord = userWord.split('');
 console.log(splittedWord);
+
+//inverto l'ordine dell'array provando .reverse() inserendo in una costante (è un array)
+const reversedSplittedWord = splittedWord.reverse();
+console.log(reversedSplittedWord);

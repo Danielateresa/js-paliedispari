@@ -20,13 +20,9 @@ buttonEl.addEventListener('click', function () {
     const userPariDispari = document.getElementById('true_false_selector').value;
 
     const resultBoxEl = document.querySelector('.results_box');
-    h3PariDispari = `<h3>hai scelto ${userPariDispari}</h3>`;
-    resultBoxEl.insertAdjacentHTML('beforeend', h3PariDispari);
 
     //console.log('hai scelto', userPariDispari);
     const userNumber = Number(document.getElementById('number_selector').value);
-    h3NumberSelector = `<h3>${userNumber} è il numero che hai scelto</h3>`;
-    resultBoxEl.insertAdjacentHTML('beforeend', h3NumberSelector);
     //console.log(userNumber, 'è il numero che hai scelto');
 
     //Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
@@ -60,11 +56,11 @@ buttonEl.addEventListener('click', function () {
     }
     if (evenOdd(numbersSum)) {
         //console.log('la somma dei numeri è pari');
-        h3sum = '<h3>la somma dei numeri è pari</h3>';
+        h3sum = `<h3>la somma dei due numeri è pari: ${numbersSum}</h3>`;
         resultBoxEl.insertAdjacentHTML('beforeend', h3sum);
     } else {
         //console.log('la somma dei numeri è dispari');
-        h3sum = '<h3>la somma dei numeri è dispari</h3>';
+        h3sum = `<h3>la somma dei due numeri è dispari: ${numbersSum}</h3>`;
         resultBoxEl.insertAdjacentHTML('beforeend', h3sum);
     }
 

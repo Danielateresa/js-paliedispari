@@ -43,16 +43,10 @@ function evenOdd(numbers) {
     }
 }
 
-if (evenOdd(numbersSum)) {
-    console.log('la somma dei due numeri è pari');
-
-} else {
-    console.log('la somma dei due numeri è dispari');
-}
-
-
 //Dichiariamo chi ha vinto.
-if (userPariDispari == numbersSum) {
+//il giocatore ha vinto se (il suo numero è pari) e (è pari anche la somma dei numeri) oppure (la sua scelta è dispari) e (la somma dei numeri è dispari)
+//( usernumber == 'pari' && evenOdd(numbersSum) ) || ( )
+if (userPariDispari == 'pari' && evenOdd(numbersSum) || userPariDispari == 'dispari' && evenOdd(numbersSum) == false) {
     console.log('la tua scelta è', userPariDispari, 'quindi hai vinto');
 } else {
     console.log('la tua scelta è', userPariDispari, ',mi dispiace, hai perso');

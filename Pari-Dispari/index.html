@@ -17,14 +17,17 @@
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
 
-    <body>
+    <body class="text-black-50">
         <div class="container mt-5">
-            <h1>Indovina se il numero generato sarà pari o dispari</h1>
+            <h1 class="text-info">Indovina se il numero generato sarà pari o
+                dispari</h1>
 
             <div class="choice_box">
                 <div class="mt-5">
-                    <label for="selector">Scegli tra pari e dispari</label>
-                    <select name="true_false_selector" id="true_false_selector">
+                    <label class="pe-2 fw-bold" for="selector">Scegli tra pari e
+                        dispari</label>
+                    <select class="px-3" name="true_false_selector"
+                        id="true_false_selector">
                         <option value="pari">pari</option>
                         <option value="dispari">dispari</option>
 
@@ -32,8 +35,10 @@
                 </div>
                 <!-- true_false_selector -->
                 <div class="mt-5">
-                    <label for="selector">Scegli il tuo numero</label>
-                    <select name="number_selector" id="number_selector">
+                    <label class="pe-2 fw-bold" for="selector">Scegli il tuo
+                        numero</label>
+                    <select class="px-3" name="number_selector"
+                        id="number_selector">
 
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -44,7 +49,8 @@
                     </select>
                 </div>
                 <!-- number_selector -->
-                <button class="mt-5" id="play">Play</button>
+                <button class="px-5 mb-4 mt-5 btn btn-info text-white rounded-5"
+                    id="play">Play</button>
             </div>
             <!-- choice_box -->
 

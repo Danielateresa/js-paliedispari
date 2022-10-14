@@ -52,7 +52,7 @@ if (evenOdd(numbersSum)) {
 
 
 //Dichiariamo chi ha vinto.
-if (userPariDispari == ) {
+if (userPariDispari == numbersSum) {
     console.log('la tua scelta è', userPariDispari, 'quindi hai vinto');
 } else {
     console.log('la tua scelta è', userPariDispari, ',mi dispiace, hai perso');

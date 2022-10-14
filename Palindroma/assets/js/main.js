@@ -16,8 +16,12 @@ let userWord = prompt('inserisci una parola');
 //separo le parole con .plit()
 //con gli apici vuoti la parola verrà scomposta in lettere formando un array
 splittedWord = userWord.split('');
-console.log(splittedWord);
+//console.log(splittedWord);
 
 //inverto l'ordine dell'array provando .reverse() inserendo in una costante (è un array)
 const reversedSplittedWord = splittedWord.reverse();
-console.log(reversedSplittedWord);
+//console.log(reversedSplittedWord);
+
+//per riunire le lettere posso usare .join('') la stringa vuota 
+joinedWord = reversedSplittedWord.join('');
+console.log(joinedWord);

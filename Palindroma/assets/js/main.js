@@ -15,20 +15,46 @@ let userWord = prompt('inserisci una parola');
 
 //separo le parole con .plit()
 //con gli apici vuoti la parola verrà scomposta in lettere formando un array
-splittedWord = userWord.split('');
+//splittedWord = userWord.split('');
 //console.log(splittedWord);
 
 //inverto l'ordine dell'array provando .reverse() inserendo in una costante (è un array)
-const reversedSplittedWord = splittedWord.reverse();
+//const reversedSplittedWord = splittedWord.reverse();
 //console.log(reversedSplittedWord);
 
 //per riunire le lettere posso usare .join('') la stringa vuota 
-joinedWord = reversedSplittedWord.join('');
+//joinedWord = reversedSplittedWord.join('');
 //console.log(joinedWord);
 
 //confrontare la parola utente con la parola palindroma
-if (userWord == joinedWord) {
+/* if (userWord == joinedWord) {
     console.log('la parola che hai scelto è palindroma');
 } else {
     console.log('la parola che hai scelto NON è palindroma');
+} */
+
+//creare una funzione che dica se la parola scelta dall'utente è palindroma
+function tellMeIfItsPalindrom(word) {
+
+    //separo le parole con .plit()
+    //con gli apici vuoti la parola verrà scomposta in lettere formando un array
+    splittedWord = userWord.split('');
+    //console.log(splittedWord);
+
+    //inverto l'ordine dell'array provando .reverse() inserendo in una costante (è un array)
+    const reversedSplittedWord = splittedWord.reverse();
+    //console.log(reversedSplittedWord);
+
+    //per riunire le lettere posso usare .join('') la stringa vuota 
+    joinedWord = reversedSplittedWord.join('');
+    //console.log(joinedWord);
+
+    if (word == joinedWord) {
+        console.log('la parola che hai scelto è palindroma');
+    } else {
+        console.log('la parola che hai scelto NON è palindroma');
+    }
 }
+
+//invocare funzione
+tellMeIfItsPalindrom(userWord)

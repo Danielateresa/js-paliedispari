@@ -24,4 +24,11 @@ const reversedSplittedWord = splittedWord.reverse();
 
 //per riunire le lettere posso usare .join('') la stringa vuota 
 joinedWord = reversedSplittedWord.join('');
-console.log(joinedWord);
+//console.log(joinedWord);
+
+//confrontare la parola utente con la parola palindroma
+if (userWord == joinedWord) {
+    console.log('la parola che hai scelto è palindroma');
+} else {
+    console.log('la parola che hai scelto NON è palindroma');
+}

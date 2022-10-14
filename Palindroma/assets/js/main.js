@@ -48,13 +48,17 @@ function tellMeIfItsPalindrom(word) {
     //per riunire le lettere posso usare .join('') la stringa vuota 
     joinedWord = reversedSplittedWord.join('');
     //console.log(joinedWord);
-
     if (word == joinedWord) {
-        console.log('la parola che hai scelto è palindroma');
-    } else {
-        console.log('la parola che hai scelto NON è palindroma');
+        return true;
     }
+    return false;
+
 }
 
-//invocare funzione
-tellMeIfItsPalindrom(userWord)
+if (tellMeIfItsPalindrom(userWord)) {// (word == joinedWord)
+    console.log('la parola che hai scelto è palindroma');
+} else {
+    console.log('la parola che hai scelto NON è palindroma');
+}
+/* //invocare funzione
+tellMeIfItsPalindrom(userWord) */
